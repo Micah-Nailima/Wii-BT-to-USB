@@ -1,0 +1,3 @@
+[submodule "WML-C43/AcheronLibrary"]
+	path = WML-C43/AcheronLibrary
+	url = https://github.com/AcheronProject/AcheronLibrary
