@@ -1,4 +1,352 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5F2C47DB
+P 1350 4550
+F 0 "#PWR?" H 1350 4300 50  0001 C CNN
+F 1 "GND" H 1355 4377 50  0000 C CNN
+F 2 "" H 1350 4550 50  0001 C CNN
+F 3 "" H 1350 4550 50  0001 C CNN
+	1    1350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L acheronSymbols:TYPE-C-31-M12_13 J?
+U 1 1 5F2C575E
+P 1400 3100
+F 0 "J?" H 1507 4517 50  0000 C CNN
+F 1 "TYPE-C-31-M12_13" H 1507 4426 50  0000 C CNN
+F 2 "acheronConnectors:TYPE-C-31-M-12" V 900 3150 50  0001 C CNN
+F 3 "" H 1600 3150 50  0001 C CNN
+	1    1400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U?
+U 1 1 5F2C71DA
+P 4250 2300
+F 0 "U?" H 4250 2542 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 4250 2451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4250 2525 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 4250 2300 50  0001 C CNN
+	1    4250 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 2000 2    50   Output ~ 0
+VBUS
+Wire Wire Line
+	2000 2050 2100 2050
+Wire Wire Line
+	2100 2050 2100 2000
+Wire Wire Line
+	2100 2000 2200 2000
+Wire Wire Line
+	2000 1950 2100 1950
+Wire Wire Line
+	2100 1950 2100 2000
+Connection ~ 2100 2000
+$Comp
+L Device:R R?
+U 1 1 5F2C8A1E
+P 2150 2450
+F 0 "R?" V 2357 2450 50  0000 C CNN
+F 1 "5.1k" V 2266 2450 50  0000 C CNN
+F 2 "" V 2080 2450 50  0001 C CNN
+F 3 "~" H 2150 2450 50  0001 C CNN
+	1    2150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F2C9025
+P 2150 2650
+F 0 "R?" V 2035 2650 50  0000 C CNN
+F 1 "5.1k" V 1944 2650 50  0000 C CNN
+F 2 "" V 2080 2650 50  0001 C CNN
+F 3 "~" H 2150 2650 50  0001 C CNN
+	1    2150 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2C93B9
+P 2400 2550
+F 0 "#PWR?" H 2400 2300 50  0001 C CNN
+F 1 "GND" V 2405 2422 50  0000 R CNN
+F 2 "" H 2400 2550 50  0001 C CNN
+F 3 "" H 2400 2550 50  0001 C CNN
+	1    2400 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 2450 2350 2450
+Wire Wire Line
+	2350 2450 2350 2550
+Wire Wire Line
+	2350 2550 2400 2550
+Wire Wire Line
+	2300 2650 2350 2650
+Wire Wire Line
+	2350 2650 2350 2550
+Connection ~ 2350 2550
+Text GLabel 2100 3150 2    50   BiDi ~ 0
+DBUS-
+Text GLabel 2100 3450 2    50   BiDi ~ 0
+DBUS+
+Wire Wire Line
+	2000 3100 2000 3150
+Wire Wire Line
+	2000 3150 2100 3150
+Wire Wire Line
+	2000 3200 2000 3150
+Connection ~ 2000 3150
+Wire Wire Line
+	2000 3400 2000 3450
+Wire Wire Line
+	2100 3450 2000 3450
+Connection ~ 2000 3450
+Wire Wire Line
+	2000 3450 2000 3500
+NoConn ~ 2000 4150
+NoConn ~ 2000 4250
+Wire Wire Line
+	1300 4550 1350 4550
+Connection ~ 1350 4550
+Wire Wire Line
+	1350 4550 1400 4550
+$Comp
+L Device:R R?
+U 1 1 5F2CB38E
+P 1100 4900
+F 0 "R?" H 1170 4946 50  0000 L CNN
+F 1 "22k" H 1170 4855 50  0000 L CNN
+F 2 "" V 1030 4900 50  0001 C CNN
+F 3 "~" H 1100 4900 50  0001 C CNN
+	1    1100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F2CBA7F
+P 900 4900
+F 0 "C?" H 785 4946 50  0000 R CNN
+F 1 "4.7n" H 785 4855 50  0000 R CNN
+F 2 "" H 938 4750 50  0001 C CNN
+F 3 "~" H 900 4900 50  0001 C CNN
+	1    900  4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4750 900  4650
+Wire Wire Line
+	900  4650 1100 4650
+Wire Wire Line
+	1100 4650 1100 4550
+Wire Wire Line
+	1100 4750 1100 4650
+Connection ~ 1100 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5F2CD018
+P 1100 5250
+F 0 "#PWR?" H 1100 5000 50  0001 C CNN
+F 1 "GND" H 1105 5077 50  0000 C CNN
+F 2 "" H 1100 5250 50  0001 C CNN
+F 3 "" H 1100 5250 50  0001 C CNN
+	1    1100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 5050 1100 5150
+Wire Wire Line
+	900  5050 900  5150
+Wire Wire Line
+	900  5150 1100 5150
+Connection ~ 1100 5150
+Wire Wire Line
+	1100 5150 1100 5250
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5F2CE3C9
+P 3650 2300
+F 0 "F?" V 3445 2300 50  0000 C CNN
+F 1 "Polyfuse_Small" V 3536 2300 50  0000 C CNN
+F 2 "" H 3700 2100 50  0001 L CNN
+F 3 "~" H 3650 2300 50  0001 C CNN
+	1    3650 2300
+	0    1    1    0   
+$EndComp
+Text GLabel 3450 2300 0    50   Input ~ 0
+VBUS
+Wire Wire Line
+	3450 2300 3550 2300
+$Comp
+L Device:C_Small C?
+U 1 1 5F2D1284
+P 3950 2500
+F 0 "C?" H 3858 2546 50  0000 R CNN
+F 1 "100n" H 3858 2455 50  0000 R CNN
+F 2 "" H 3950 2500 50  0001 C CNN
+F 3 "~" H 3950 2500 50  0001 C CNN
+	1    3950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F2D240F
+P 4550 2500
+F 0 "C?" H 4642 2546 50  0000 L CNN
+F 1 "100n" H 4642 2455 50  0000 L CNN
+F 2 "" H 4550 2500 50  0001 C CNN
+F 3 "~" H 4550 2500 50  0001 C CNN
+	1    4550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:B260 D?
+U 1 1 5F2D2EAB
+P 3800 1950
+F 0 "D?" V 3754 1871 50  0000 R CNN
+F 1 "B260" V 3845 1871 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 3800 1775 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 3800 1950 50  0001 C CNN
+	1    3800 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 2600 4250 2600
+Wire Wire Line
+	4250 2600 4550 2600
+Connection ~ 4250 2600
+Wire Wire Line
+	4550 2400 4550 2300
+Wire Wire Line
+	3950 2400 3950 2300
+Connection ~ 3950 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5F2D4DC0
+P 4250 2600
+F 0 "#PWR?" H 4250 2350 50  0001 C CNN
+F 1 "GND" H 4255 2427 50  0000 C CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0001 C CNN
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2D5376
+P 3800 1800
+F 0 "#PWR?" H 3800 1550 50  0001 C CNN
+F 1 "GND" H 3805 1627 50  0000 C CNN
+F 2 "" H 3800 1800 50  0001 C CNN
+F 3 "" H 3800 1800 50  0001 C CNN
+	1    3800 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5F2D59FB
+P 4250 1950
+F 0 "D?" H 4250 2167 50  0000 C CNN
+F 1 "1N914" H 4250 2076 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4250 1775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4250 1950 50  0001 C CNN
+	1    4250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1950 3950 1950
+Wire Wire Line
+	3950 1950 3950 2300
+Wire Wire Line
+	4400 1950 4550 1950
+Wire Wire Line
+	4550 1950 4550 2300
+Connection ~ 4550 2300
+Text GLabel 4650 2300 2    50   Output ~ 0
+3.3V
+Wire Wire Line
+	4550 2300 4650 2300
+Wire Wire Line
+	3750 2300 3800 2300
+Wire Wire Line
+	3800 2100 3800 2300
+Connection ~ 3800 2300
+Wire Wire Line
+	3800 2300 3950 2300
+$Comp
+L Power_Protection:USBLC6-2SC6 U?
+U 1 1 5F2DA715
+P 4150 4000
+F 0 "U?" H 4150 4581 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 4150 4490 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4150 3500 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 4350 4350 50  0001 C CNN
+	1    4150 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 3900 0    50   BiDi ~ 0
+DBUS-
+Text GLabel 3750 4100 0    50   BiDi ~ 0
+D-
+Text GLabel 4550 3900 2    50   BiDi ~ 0
+DBUS+
+Text GLabel 4550 4100 2    50   BiDi ~ 0
+D+
+$Comp
+L power:GND #PWR?
+U 1 1 5F2DD27D
+P 4150 4400
+F 0 "#PWR?" H 4150 4150 50  0001 C CNN
+F 1 "GND" H 4155 4227 50  0000 C CNN
+F 2 "" H 4150 4400 50  0001 C CNN
+F 3 "" H 4150 4400 50  0001 C CNN
+	1    4150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F2DD7DE
+P 4250 3300
+F 0 "C?" V 4021 3300 50  0000 C CNN
+F 1 "100n" V 4112 3300 50  0000 C CNN
+F 2 "" H 4250 3300 50  0001 C CNN
+F 3 "~" H 4250 3300 50  0001 C CNN
+	1    4250 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2DE26A
+P 4350 3300
+F 0 "#PWR?" H 4350 3050 50  0001 C CNN
+F 1 "GND" V 4355 3172 50  0000 R CNN
+F 2 "" H 4350 3300 50  0001 C CNN
+F 3 "" H 4350 3300 50  0001 C CNN
+	1    4350 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 3600 4150 3300
+Text GLabel 4000 3300 0    50   Input ~ 0
+VBUS
+Wire Wire Line
+	4000 3300 4150 3300
+Connection ~ 4150 3300
 $EndSCHEMATC
