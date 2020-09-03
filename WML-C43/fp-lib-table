@@ -3,4 +3,5 @@
   (lib (name acheron_MountingHoles)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_MountingHoles.pretty)(options "")(descr ""))
   (lib (name acheron_Hardware)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_Hardware.pretty)(options "")(descr ""))
   (lib (name acheron_Components)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_Components.pretty)(options "")(descr ""))
+  (lib (name Wii-BL-Lib)(type KiCad)(uri ${KIPRJMOD}/Wii-BL-Lib.pretty)(options "")(descr ""))
 )

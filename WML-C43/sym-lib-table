@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name acheronSymbols)(type Legacy)(uri ${KIPRJMOD}/AcheronLibrary/symbols/acheronSymbols.lib)(options "")(descr ""))
+  (lib (name Wii-BL-Lib)(type Legacy)(uri ${KIPRJMOD}/Wii-BL-Lib.lib)(options "")(descr ""))
 )
