@@ -1,0 +1,9 @@
+Partlist exported from D:/Documents/EAGLE/projects/Wii Bluetooth Module/main.sch at 8/31/2018 10:58
+
+Part Value                    Device                            Package                     Description                                        
+C1   10uF                     C-EUC0805                         C0805                       CAPACITOR, European symbol                         
+C2   100uF                    C-EUC0805                         C0805                       CAPACITOR, European symbol                         
+S1                            MOMENTARY-SWITCH-SPST-2-SMD-5.2MM TACTILE_SWITCH_SMD_5.2MM    Momentary Switch (Pushbutton) - SPST - Two Circuits
+U$1  MOLEX_0541020164MOLEX    MOLEX_0541020164MOLEX             MOLEX_0541020164                                                               
+U$2  USB-CON-5PIN-105017-0001 USB-CON-5PIN-105017-0001          USB-MICRO-MOLEX-105017-0001 Molex Micro USB 105017-0001                        
+U1   5>3V3                    V_REG_LM1117SOT223                SOT223                      Voltage Regulator LM1117                           
