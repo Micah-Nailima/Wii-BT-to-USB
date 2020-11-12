@@ -25,17 +25,6 @@ F 3 "" H 1350 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L acheronSymbols:TYPE-C-31-M12_13 J1
-U 1 1 5F2C575E
-P 1400 3100
-F 0 "J1" H 1507 4517 50  0000 C CNN
-F 1 "TYPE-C-31-M12_13" H 1507 4426 50  0000 C CNN
-F 2 "acheron_Connectors:TYPE-C-31-M-12" V 900 3150 50  0001 C CNN
-F 3 "" H 1600 3150 50  0001 C CNN
-	1    1400 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:MCP1700-3302E_SOT23 U2
 U 1 1 5F2C71DA
 P 3250 1300
@@ -403,4 +392,15 @@ F 3 "" H 3250 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3200 3000
+$Comp
+L acheronSymbols:TYPE-C-31-M12_13 J1
+U 1 1 5F2C575E
+P 1400 3100
+F 0 "J1" H 1507 4517 50  0000 C CNN
+F 1 "TYPE-C-31-M12_13" H 1507 4426 50  0000 C CNN
+F 2 "acheron_Connectors:TYPE-C-31-M-12" V 900 3150 50  0001 C CNN
+F 3 "" H 1600 3150 50  0001 C CNN
+	1    1400 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
