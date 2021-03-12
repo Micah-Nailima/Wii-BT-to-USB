@@ -179,8 +179,6 @@ F 3 "~" H 2650 1300 50  0001 C CNN
 	1    2650 1300
 	0    1    1    0   
 $EndComp
-Text GLabel 2450 1300 0    50   Input ~ 0
-VBUS
 Wire Wire Line
 	2450 1300 2550 1300
 $Comp
@@ -254,7 +252,7 @@ U 1 1 5F2D59FB
 P 3250 950
 F 0 "D2" H 3250 1167 50  0000 C CNN
 F 1 "1N914" H 3250 1076 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3250 775 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 3250 775 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 3250 950 50  0001 C CNN
 	1    3250 950 
 	1    0    0    -1  
@@ -334,7 +332,7 @@ $EndComp
 Wire Wire Line
 	3050 3950 3050 3650
 Text GLabel 2900 3650 0    50   Input ~ 0
-VBUS
+VFILTER
 Wire Wire Line
 	2900 3650 3050 3650
 Connection ~ 3050 3650
@@ -403,4 +401,86 @@ F 3 "" H 1600 3150 50  0001 C CNN
 	1    1400 3100
 	1    0    0    -1  
 $EndComp
+Text GLabel 2450 1300 0    50   Input ~ 0
+VFILTER
+Text GLabel 4750 1500 0    50   Input ~ 0
+VBUS
+$Comp
+L Device:C_Small C5
+U 1 1 5FB59EB5
+P 5000 1600
+F 0 "C5" H 5092 1646 50  0000 L CNN
+F 1 "10n" H 5092 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5000 1600 50  0001 C CNN
+F 3 "~" H 5000 1600 50  0001 C CNN
+	1    5000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5FB5A6AE
+P 5550 1600
+F 0 "C6" H 5642 1646 50  0000 L CNN
+F 1 "100n" H 5642 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 1600 50  0001 C CNN
+F 3 "~" H 5550 1600 50  0001 C CNN
+	1    5550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5FB5B2EC
+P 5250 1500
+F 0 "FB1" V 5013 1500 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 5104 1500 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 1500 50  0001 C CNN
+F 3 "~" H 5250 1500 50  0001 C CNN
+	1    5250 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 1500 5000 1500
+Wire Wire Line
+	5000 1500 5150 1500
+Connection ~ 5000 1500
+Wire Wire Line
+	5350 1500 5550 1500
+Text GLabel 6150 1500 2    50   Output ~ 0
+VFILTER
+Connection ~ 5550 1500
+Wire Wire Line
+	5000 1700 5250 1700
+$Comp
+L power:GND #PWR0108
+U 1 1 5FB62622
+P 5250 1700
+F 0 "#PWR0108" H 5250 1450 50  0001 C CNN
+F 1 "GND" H 5255 1527 50  0000 C CNN
+F 2 "" H 5250 1700 50  0001 C CNN
+F 3 "" H 5250 1700 50  0001 C CNN
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 1700
+Wire Wire Line
+	5250 1700 5550 1700
+$Comp
+L Device:C_Small C7
+U 1 1 606AD70F
+P 5900 1600
+F 0 "C7" H 5992 1646 50  0000 L CNN
+F 1 "10u" H 5992 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5900 1600 50  0001 C CNN
+F 3 "~" H 5900 1600 50  0001 C CNN
+	1    5900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1500 5900 1500
+Wire Wire Line
+	5900 1500 6150 1500
+Connection ~ 5900 1500
+Wire Wire Line
+	5550 1700 5900 1700
+Connection ~ 5550 1700
 $EndSCHEMATC
